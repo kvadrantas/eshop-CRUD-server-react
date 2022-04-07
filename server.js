@@ -25,10 +25,10 @@ app.use(express.json());
 import mysql from "mysql";
 
 const con = mysql.createConnection({
-    host: "localhost",
-    user: "eshop",
-    password: "Laikinas1",
-    database: "eshop",
+    host: process.env.Hostname,
+    user: process.env.Username,
+    password: process.env.Password,
+    database: process.env.Database,
 });
 
 con.connect(function(err) {
