@@ -8,7 +8,7 @@ import express, { json } from "express";
 const app = express()
 const port = 3003
 app.listen(port, () => {
-console.log(`Example app listening at http://localhost:${port}`)
+console.log(`Example app listening at http://localhost`)
 })
 
 // const cors = require('cors')
@@ -19,6 +19,10 @@ app.use(express.urlencoded({
 }))
 app.use(express.json());
 
+
+app.use(cors({
+    origin: '*'
+}));
 
 // ----------------- MY SQL CONNECT -----------------
 // const mysql = require('mysql')
