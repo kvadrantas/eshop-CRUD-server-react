@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "go": "nodemon server.js"
+    "go": "nodemon ./js/server.js"
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,4 @@
-import isValid from "./js/isValid.js";
+import isValid from "./isValid.js";
 
 // import moment from "moment-timezone";
 
